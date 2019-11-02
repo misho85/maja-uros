@@ -4,7 +4,7 @@ import { Intro } from '~src/components/pages/contact';
 
 const Contact = () => (
   <Layout>
-    <SEO title="Values" />
+    <SEO title="Potvrda" />
     <Intro />
   </Layout>
 );

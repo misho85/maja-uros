@@ -4,7 +4,7 @@ import { Hero } from '~src/components/pages/home';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Pozivnica" />
     <Hero />
   </Layout>
 );

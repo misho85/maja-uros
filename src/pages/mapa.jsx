@@ -4,7 +4,7 @@ import { Intro } from '~src/components/pages/mapa';
 
 const Mapa = () => (
   <Layout>
-    <SEO title="Values" />
+    <SEO title="Mapa" />
     <Intro />
   </Layout>
 );
