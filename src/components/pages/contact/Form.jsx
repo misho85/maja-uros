@@ -4,7 +4,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const FormContainer = styled.form``;
+const FormContainer = styled.form`
+  width: 100%;
+`;
 
 const FormFields = styled.ul`
   padding: 0;
@@ -37,7 +39,7 @@ const FormFields = styled.ul`
       padding: 14px;
       resize: none;
       -webkit-appearance: none;
-      border-radius: .5em;
+      /* border-radius: .5em; */
       transition: all 300ms ease-in-out;
       &:hover,
       &:focus {
@@ -177,7 +179,7 @@ const MessageField = styled.ul`
       box-sizing: border-box;
       width: 100%;
       border: 1px solid rgba(234, 234, 234, 1);
-      border-radius: .5em;
+      /* border-radius: .5em; */
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 1px;
@@ -195,7 +197,6 @@ const MessageField = styled.ul`
 `;
 
 const Submit = styled.input`
-  border-radius: 0.5em;
   outline: none;
   box-shadow: none;
   background: rgba(85, 187, 192, 1);
@@ -208,7 +209,7 @@ const Submit = styled.input`
   cursor: pointer;
   transition: all 0.3s ease;
   -webkit-appearance: none;
-  border-radius: 0.5em;
+  /* border-radius: 0.5em; */
   resize: none;
   border: none;
   &:hover {
@@ -220,9 +221,9 @@ const Submit = styled.input`
       background: rgba(85, 187, 192, 1);
     }
   }
-  position: relative;
+  /* position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 `;
 
 const encode = data => {
@@ -283,7 +284,7 @@ const Form = () => {
       <input type="hidden" name="form-name" value="potvrda_dolaska" />
       <p hidden>
         <label>
-          Don’t fill this out:{''}
+          Don’t fill this out:
           <input name="bot-field" onChange={handleChange} />
         </label>
       </p>
