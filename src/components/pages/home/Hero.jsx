@@ -4,10 +4,16 @@ import { Link } from 'gatsby';
 import back from '~src/assets/images/back.jpg';
 
 const Wrapper = styled.section`
-  background: linear-gradient(
+  /* background: linear-gradient(
       to top right,
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.73)
+    ),
+    url(${back}) no-repeat center; */
+  background: linear-gradient(
+      to top right,
+      rgba(245, 246, 252, 0.52),
+      rgba(19, 47, 117, 0.73)
     ),
     url(${back}) no-repeat center;
   background-size: 100% 100%;
