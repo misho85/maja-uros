@@ -12,14 +12,14 @@ const Wrapper = styled.section`
   height: 100vh;
   ${p => p.theme.maxWidth.xLarge`
     font-size: 90%;
-    height: fit-content;
   `}
   ${p => p.theme.maxWidth.wide`
     font-size: 80%;
   `}
-  ${p => p.theme.maxWidth.desktop`
-    font-size: 75%;
+  ${p => p.theme.maxWidth.tablet`
+    background-size: cover;
   `}
+  z-index: -1;
 `;
 
 const Container = styled.div`
@@ -27,44 +27,105 @@ const Container = styled.div`
   display: flex;
   margin: auto;
   text-align: center;
-  ${p => p.theme.maxWidth.desktop`
-    margin-top: -10em;
-    margin-left: 3em;
-    padding-top: 22em;
-  `}
   ${p => p.theme.maxWidth.tablet`
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0 auto;
-    padding-top: 12em;
+    margin-top: 50px;
   `}
-  ${p => p.theme.maxWidth.phone`
-    padding-top: 8em;
-  `}
+  z-index: 1;
 `;
 
-const Details = styled.div``;
+const Details = styled.div`
+  display: flex;
+  flex-direction: column;
+  p {
+    color: white;
+  }
+`;
 
-const data = {
-  headline: `Maja i Uros`,
-  desctiption: `ghjgjhgjhgjhg`,
-  btnLabel: `potvrdi dolazak`,
-};
+const Confirm = styled(Link)`
+  outline: none;
+  box-shadow: none;
+  background: rgba(85, 187, 192, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  width: 300px;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+  /* border-radius: 0.5em; */
+  resize: none;
+  border: none;
+  &:hover {
+    background: rgba(69, 152, 156, 1);
+  }
+  &:disabled {
+    cursor: not-allowed;
+    &:hover {
+      background: rgba(85, 187, 192, 1);
+    }
+  }
+`;
 
-const Hero = () => {
-  const { headline, description, btnLabel } = data;
-  return (
-    <Wrapper>
-      <Container>
-        <Details>
-          <h1>{headline}</h1>
-          <p>{description}</p>
-          <Link to="/contact">{btnLabel}</Link>
-          <Link to="/mapa">mapa</Link>
-        </Details>
-      </Container>
-    </Wrapper>
-  );
-};
+const Citat = styled.p`
+  margin-bottom: 50px;
+`;
+
+const Invitation = styled.p``;
+
+const Title = styled.h1`
+  margin: 1em 0;
+`;
+
+const Text = styled.p`
+  margin-bottom: 1em;
+`;
+
+const Respect = styled.p`
+  margin: 3em 0;
+`;
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  background-color: #000;
+`;
+
+const Hero = () => (
+  <Wrapper>
+    <Overlay />
+    <Container>
+      <Details>
+        <Citat>
+          „You don’t marry someone you can live with – you marry the person you
+          cannot live without.“
+        </Citat>
+        <Invitation>
+          Pozivamo Vas da uveličate ceremoniju našeg venčanja 19. oktobra 2019.
+          godine.
+        </Invitation>
+        <Title>Maja Mihajlov i Uros Plecić</Title>
+        <Text>
+          Proslava i građansko venčanje će se održati u restoranu “Akacia Open
+          Concept”
+          <br />
+          Okupljanje gostiju od 14h na adresi Kragujevački put 82a
+          <br />
+          Građansko venčanje u 15h
+        </Text>
+        <Link to="/mapa">pogledaj mapu</Link>
+        <Respect>S poštovanjem, porodice Albunović i Perčić</Respect>
+        <Confirm to="/contact">potvrdte prisustvo</Confirm>
+      </Details>
+    </Container>
+  </Wrapper>
+);
 
 export default Hero;

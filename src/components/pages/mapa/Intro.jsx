@@ -28,6 +28,9 @@ const Top = styled.div`
   background-position-y: bottom;
   background-size: cover;
   display: flex;
+  ${p => p.theme.maxWidth.phone`
+    background-position-x: right;
+  `}
 `;
 
 const Title = styled.h1`
@@ -58,6 +61,9 @@ const Box = styled.div`
   text-align: center;
   box-shadow: 0 0 50px 0 rgba(130, 128, 128, 0.25);
   min-width: 60%;
+  ${p => p.theme.maxWidth.tablet`
+    margin: 0;
+  `}
 `;
 
 const SafetyLine = styled.p`
@@ -106,7 +112,7 @@ const Mapa = () => (
         Profesionalni vozači su organizovani da Vas I Vaše vozilo vrate bezbedno
         kući.
       </SafetyLine>
-      <Confirm to="/contact">Potvrdi prisustvo</Confirm>
+      <Confirm to="/contact">Potvrdite prisustvo</Confirm>
     </Content>
   </Wrapper>
 );

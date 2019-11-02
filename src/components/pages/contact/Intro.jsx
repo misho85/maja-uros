@@ -28,6 +28,9 @@ const Top = styled.div`
   background-position-y: bottom;
   background-size: cover;
   display: flex;
+  ${p => p.theme.maxWidth.phone`
+    background-position-x: right;
+  `}
 `;
 
 const Title = styled.h1`
@@ -48,7 +51,6 @@ const Content = styled.div`
     padding-bottom: 80px;
   `}
 `;
-
 const Box = styled.div`
   align-items: center;
   display: flex;
@@ -58,6 +60,9 @@ const Box = styled.div`
   box-shadow: 0 0 50px 0 rgba(130, 128, 128, 0.25);
   padding: 100px 130px;
   min-width: 50%;
+  ${p => p.theme.maxWidth.tablet`
+    padding: 15%;
+  `}
 `;
 
 const Instruction = styled.i`
