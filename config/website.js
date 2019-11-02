@@ -19,7 +19,7 @@ module.exports = {
 
   /* manifest */
   manifestBackgroundColor: '#141821', // Used for setting manifest background and progress theme colors.
-  manifestThemeColor: '#f6ad55', // Used for setting manifest theme color .
+  manifestThemeColor: '#222', // Used for setting manifest theme color .
   manifestDisplay: 'standalone',
   manifestIcon: 'static/icon.svg', // This path is relative to the root of the site.
 };
