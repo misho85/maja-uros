@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Form from './Form';
-import LineSvg from './LineSvg';
+import { Link } from 'gatsby';
 import back2 from '~src/assets/images/back2.jpg';
+import Map from './Map';
 
 const Wrapper = styled.section`
   ${p => p.theme.maxWidth.xLarge`
@@ -40,6 +40,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+  padding-bottom: 50px;
   ${p => p.theme.maxWidth.tablet`
     padding: 0 5%;
   `}
@@ -56,47 +57,58 @@ const Box = styled.div`
   margin: auto;
   text-align: center;
   box-shadow: 0 0 50px 0 rgba(130, 128, 128, 0.25);
-  padding: 100px 130px;
-  min-width: 50%;
-`;
-
-const Instruction = styled.i`
-  margin-bottom: 15px;
-`;
-
-const ConfirmText = styled.p`
-  margin: 50px 0;
+  min-width: 60%;
 `;
 
 const SafetyLine = styled.p`
   margin: 50px 0;
 `;
 
-const Divider = styled(LineSvg)`
-  width: 50%;
+const Confirm = styled(Link)`
+  outline: none;
+  box-shadow: none;
+  background: rgba(85, 187, 192, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  width: 300px;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+  /* border-radius: 0.5em; */
+  resize: none;
+  border: none;
+  &:hover {
+    background: rgba(69, 152, 156, 1);
+  }
+  &:disabled {
+    cursor: not-allowed;
+    &:hover {
+      background: rgba(85, 187, 192, 1);
+    }
+  }
 `;
 
-const Intro = () => (
+const Mapa = () => (
   <Wrapper>
     <Top>
-      <Title>Potvrda prisustva</Title>
+      <Title>Mapa</Title>
     </Top>
     <Content>
       <Box>
-        <Instruction>Popunite formu</Instruction>
-        <h4>Potvrdite prisustvo</h4>
-        <Divider />
-        <ConfirmText>
-          Molimo da Vaše prisustvo potvrdite do 19.09.2099.
-        </ConfirmText>
-        <Form />
+        <Map />
       </Box>
       <SafetyLine>
         Profesionalni vozači su organizovani da Vas I Vaše vozilo vrate bezbedno
         kući.
       </SafetyLine>
+      <Confirm to="/contact">Potvrdi prisustvo</Confirm>
     </Content>
   </Wrapper>
 );
 
-export default Intro;
+export default Mapa;

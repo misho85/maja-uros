@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import back from '~src/assets/images/back.jpg';
@@ -61,18 +60,11 @@ const Hero = () => {
           <h1>{headline}</h1>
           <p>{description}</p>
           <Link to="/contact">{btnLabel}</Link>
+          <Link to="/mapa">mapa</Link>
         </Details>
       </Container>
     </Wrapper>
   );
-};
-
-Hero.propTypes = {
-  data: PropTypes.shape({
-    headline: PropTypes.string,
-    description: PropTypes.string,
-    btnLabel: PropTypes.string,
-  }).isRequired,
 };
 
 export default Hero;
