@@ -15,11 +15,11 @@ module.exports = {
   siteUrl: base.url, // Domain of your site. No trailing slash!
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-example/.
 
-  siteLogo: 'src/assets/images/banner.jpg', // Logo used for SEO.
+  siteLogo: '/banner.jpg', // Logo used for SEO.
 
   /* manifest */
   manifestBackgroundColor: '#141821', // Used for setting manifest background and progress theme colors.
   manifestThemeColor: '#f6ad55', // Used for setting manifest theme color .
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/images/icon.svg', // This path is relative to the root of the site.
+  manifestIcon: 'static/icon.svg', // This path is relative to the root of the site.
 };
