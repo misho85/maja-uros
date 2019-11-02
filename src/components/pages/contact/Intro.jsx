@@ -47,8 +47,7 @@ const Content = styled.div`
     padding: 0 5%;
   `}
   ${p => p.theme.maxWidth.phone`
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: 65px;
   `}
 `;
 const Box = styled.div`
@@ -79,6 +78,9 @@ const SafetyLine = styled.p`
 
 const Divider = styled(LineSvg)`
   width: 50%;
+  ${p => p.theme.maxWidth.tablet`
+    width: 100%;
+  `}
 `;
 
 const Intro = () => (
