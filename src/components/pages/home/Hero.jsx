@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import back from '~src/assets/images/back.jpg';
 
 const Wrapper = styled.section`
@@ -48,7 +49,7 @@ const Details = styled.div``;
 const data = {
   headline: `Maja i Uros`,
   desctiption: `ghjgjhgjhgjhg`,
-  btnLabel: `bnmbmnb`,
+  btnLabel: `potvrdi dolazak`,
 };
 
 const Hero = () => {
@@ -59,7 +60,7 @@ const Hero = () => {
         <Details>
           <h1>{headline}</h1>
           <p>{description}</p>
-          <button type="button">{btnLabel}</button>
+          <Link to="/contact">{btnLabel}</Link>
         </Details>
       </Container>
     </Wrapper>
