@@ -221,6 +221,7 @@ const Submit = styled.input`
       background: rgba(85, 187, 192, 1);
     }
   }
+  margin-top: 20px;
   /* position: relative;
   left: 50%;
   transform: translateX(-50%); */

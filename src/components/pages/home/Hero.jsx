@@ -5,7 +5,7 @@ import back from '~src/assets/images/back.jpg';
 
 const Wrapper = styled.section`
   background: linear-gradient(
-      to bottom,
+      to top right,
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.73)
     ),
