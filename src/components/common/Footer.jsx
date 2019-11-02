@@ -23,6 +23,9 @@ const Content = styled.div`
   margin: auto;
   display: flex;
   flex-direction: row;
+  a {
+    color: #5a5a5a;
+  }
   ${p => p.theme.maxWidth.tablet`
     padding: 0 5%;
   `}

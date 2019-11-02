@@ -38,6 +38,8 @@ const Details = styled.div`
   flex-direction: column;
   p {
     color: white;
+    font-size: 20px;
+    line-height: 1.5;
   }
 `;
 
@@ -88,6 +90,10 @@ const Respect = styled.p`
   margin: 3em 0;
 `;
 
+const MapLink = styled(Link)`
+  text-decoration: underline;
+`;
+
 const Overlay = styled.div`
   position: absolute;
   top: 0;
@@ -120,7 +126,7 @@ const Hero = () => (
           <br />
           Građansko venčanje u 15h
         </Text>
-        <Link to="/mapa">pogledaj mapu</Link>
+        <MapLink to="/mapa">pogledaj mapu</MapLink>
         <Respect>S poštovanjem, porodice Albunović i Perčić</Respect>
         <Confirm to="/contact">potvrdte prisustvo</Confirm>
       </Details>

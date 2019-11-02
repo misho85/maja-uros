@@ -43,15 +43,15 @@ export default createGlobalStyle`
   }
 
   h1 {
-    font-family: ${p => p.theme.fonts.heading};
+    font-family: ${p => p.theme.fonts.heading1};
     font-size: 4.5em;
-    color: ${p => p.theme.colors.blue1};
+    color: white;
   }
 
   h2 {
     font-family: ${p => p.theme.fonts.heading};
     font-size: 3em;
-    color: ${p => p.theme.colors.blue1};
+    color: white;
   }
 
   h3 {
@@ -128,6 +128,7 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: white;
     &:hover,
     &:active,
     &:focus {
