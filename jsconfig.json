@@ -1,0 +1,14 @@
+{
+  "exclude": ["node_modules", ".cashe", "build", "static"],
+  "compilerOptions": {
+    "jsx": "react",
+    // "checkJs": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "~src/*": ["./src/*"],
+      "~config/*": ["./config/*"],
+      "~data/*": ["./data/*"]
+    }
+  }
+}

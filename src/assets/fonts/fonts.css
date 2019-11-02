@@ -1,0 +1,69 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3784620, 2019-07-11T11:40:15-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AvenirLTPro-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-55-roman/
+ * 
+ * Webfont: AvenirLTPro-Heavy by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-85-heavy/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3784620
+ * Licensed pageviews: 250,000
+ * Webfonts copyright: Copyright &#x00A9; 2014 Monotype GmbH. All rights reserved.
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+/* @import url('//hello.myfonts.net/count/39bfac'); */
+
+@font-face {
+  font-family: 'AvenirLTPro';
+  src: url('39BFAC_0_0.eot');
+  src: url('39BFAC_0_0.eot?#iefix') format('embedded-opentype'),
+    url('39BFAC_0_0.woff2') format('woff2'),
+    url('39BFAC_0_0.woff') format('woff'),
+    url('39BFAC_0_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTPro';
+  src: url('39BFAC_1_0.eot');
+  src: url('39BFAC_1_0.eot?#iefix') format('embedded-opentype'),
+    url('39BFAC_1_0.woff2') format('woff2'),
+    url('39BFAC_1_0.woff') format('woff'),
+    url('39BFAC_1_0.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaN';
+  src: url('87e4b4fc-cdf1-450a-8bed-dd818cba908d.eot?#iefix');
+  src: url('87e4b4fc-cdf1-450a-8bed-dd818cba908d.eot?#iefix') format('eot'),
+    url('ae47a7f5-89da-4879-b934-29722c3dd451.woff2') format('woff2'),
+    url('70ae52ec-d89b-4c6a-9402-854ebe423c54.woff') format('woff'),
+    url('6a35571c-ea14-4dac-9ae1-0e7af0abeec8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaN';
+  src: url('9fbce143-f5db-4c0b-9159-b1e666079f67.eot?#iefix');
+  src: url('9fbce143-f5db-4c0b-9159-b1e666079f67.eot?#iefix') format('eot'),
+    url('eb39afe0-709e-46d6-92ad-db5c3bfd24a9.woff2') format('woff2'),
+    url('19dd5cf2-ac2d-48d5-901a-c432fd291ee2.woff') format('woff'),
+    url('22cfbfa4-f607-4751-92eb-6fa194353e57.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
