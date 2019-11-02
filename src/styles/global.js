@@ -45,6 +45,7 @@ export default createGlobalStyle`
   h1 {
     font-family: ${p => p.theme.fonts.heading1};
     font-size: 4.5em;
+    font-weight: 400;
     color: white;
   }
 

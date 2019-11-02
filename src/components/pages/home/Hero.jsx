@@ -4,22 +4,23 @@ import { Link } from 'gatsby';
 import back from '~src/assets/images/back.jpg';
 
 const Wrapper = styled.section`
-  background: url(${back}) no-repeat center;
+  background: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(117, 19, 93, 0.73)
+    ),
+    url(${back}) no-repeat center;
   background-size: 100% 100%;
   /* background-size: cover; */
   align-items: center;
   display: flex;
   height: 100vh;
-  ${p => p.theme.maxWidth.xLarge`
-    font-size: 90%;
-  `}
-  ${p => p.theme.maxWidth.wide`
-    font-size: 80%;
-  `}
+  padding: 0 5%;
   ${p => p.theme.maxWidth.tablet`
     background-size: cover;
+    font-size: 90%;
+    height: fit-content;
   `}
-  z-index: -1;
 `;
 
 const Container = styled.div`
@@ -30,7 +31,6 @@ const Container = styled.div`
   ${p => p.theme.maxWidth.tablet`
     margin-top: 50px;
   `}
-  z-index: 1;
 `;
 
 const Details = styled.div`
@@ -70,6 +70,10 @@ const Confirm = styled(Link)`
       background: rgba(85, 187, 192, 1);
     }
   }
+  margin-bottom: 50px;
+  ${p => p.theme.maxWidth.tablet`
+    margin-bottom: 50px;
+  `}
 `;
 
 const Citat = styled.p`
@@ -94,19 +98,8 @@ const MapLink = styled(Link)`
   text-decoration: underline;
 `;
 
-const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.2;
-  background-color: #000;
-`;
-
 const Hero = () => (
   <Wrapper>
-    <Overlay />
     <Container>
       <Details>
         <Citat>
