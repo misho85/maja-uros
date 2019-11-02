@@ -2,11 +2,16 @@ const path = require('path');
 
 const website = require('./config/website');
 
+const pathPrefix = website.pathPrefix === '/' ? '' : website.pathPrefix;
+
 module.exports = {
+  pathPrefix: website.pathPrefix,
   siteMetadata: {
-    title: website.siteTitle,
-    description: website.siteDescription,
-    logo: website.siteLogo,
+    siteTitle: website.siteTitle,
+    siteTitleAlt: website.siteTitleAlt,
+    siteUrl: website.siteUrl + pathPrefix,
+    siteDescription: website.siteDescription,
+    siteImage: website.siteLogo,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
