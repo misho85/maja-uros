@@ -33,7 +33,7 @@ const Wrapper = styled.section`
     background: linear-gradient(
       to top right,
       rgba(245, 246, 252, 0.52),
-      rgba(112, 101, 112, 0.73)
+      rgba(117, 19, 93, 0.73)
     ),
     url(${back}) no-repeat center;
     background-size: cover;
