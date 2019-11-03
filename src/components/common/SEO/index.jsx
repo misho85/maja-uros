@@ -19,7 +19,7 @@ const SEO = ({ title, description, pathname, image, children }) => {
     url: `${siteUrl}${pathname || ``}`,
     image: `${siteUrl}${image || defaultImage}`,
   };
-  console.log('image', image);
+
   return (
     <Helmet
       title={title}

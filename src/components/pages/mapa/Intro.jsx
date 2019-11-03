@@ -112,7 +112,7 @@ const Mapa = () => (
         Profesionalni vozači su organizovani da Vas I Vaše vozilo vrate bezbedno
         kući.
       </SafetyLine>
-      <Confirm to="/contact">Potvrdite prisustvo</Confirm>
+      <Confirm to="/potvrda">Potvrdite prisustvo</Confirm>
     </Content>
   </Wrapper>
 );

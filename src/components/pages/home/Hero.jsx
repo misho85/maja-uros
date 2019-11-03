@@ -150,7 +150,7 @@ const Hero = () => (
           <br />
           porodice Mihajlov i Plećić
         </Respect>
-        <Confirm to="/contact">potvrdte prisustvo</Confirm>
+        <Confirm to="/potvrda">potvrdte prisustvo</Confirm>
       </Details>
     </Container>
   </Wrapper>
