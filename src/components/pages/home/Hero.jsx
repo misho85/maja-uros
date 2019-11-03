@@ -16,7 +16,7 @@ const Wrapper = styled.section`
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.73)
     ),
-    url(${back}) no-repeat center;
+    url(${back2}) no-repeat center;
   /* background: linear-gradient(
       to top right,
       rgba(245, 246, 252, 0.52),
