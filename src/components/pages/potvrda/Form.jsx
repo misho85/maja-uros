@@ -259,7 +259,10 @@ const Form = () => {
         ...state,
       }),
     })
-      .then(() => alert(`Poruka poslata. Vidimo se uskoro 😉 `))
+      .then(() => {
+        alert(`Poruka poslata. Vidimo se uskoro 😉 `);
+        setState(initialState);
+      })
       .catch(error => alert(error));
   };
 
@@ -294,6 +297,7 @@ const Form = () => {
             name="firstName"
             id="firstName"
             type="text"
+            value={state.firstName}
             placeholder="Ime"
             onChange={handleChange}
           />
@@ -307,6 +311,7 @@ const Form = () => {
             name="lastName"
             id="lastName"
             type="text"
+            value={state.lastName}
             placeholder="Prezime"
             onChange={handleChange}
           />
@@ -319,6 +324,7 @@ const Form = () => {
             name="email"
             id="email"
             type="email"
+            value={state.email}
             placeholder="Email"
             onChange={handleChange}
           />
@@ -331,7 +337,7 @@ const Form = () => {
             required
             name="number"
             id="number"
-            value={state.value}
+            value={state.number}
             placeholder="Broj gostiju"
             onChange={handleChange}
           >
@@ -356,6 +362,7 @@ const Form = () => {
             placeholder="Dodatna poruka"
             rows={5}
             cols={50}
+            value={state.message}
             onChange={handleChange}
           />
         </li>
