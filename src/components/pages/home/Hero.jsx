@@ -119,7 +119,8 @@ const Respect = styled.p`
 
 const MapLink = styled(Link)`
   text-decoration: underline;
-  font-size: 20px;
+  font-style: italic;
+  font-size: 18px;
   transition: all 0.2s ease;
   &:hover {
     color: rgba(85, 187, 192, 1);
