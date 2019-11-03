@@ -35,11 +35,16 @@ const Content = styled.div`
   `}
 `;
 
+const Haert = styled.small`
+  margin: 0 5px;
+`;
+
 const Footer = () => (
   <Wrapper>
     <Content>
-      <Link to="/">Maja & Uros</Link>
-      <Link to="/">nazad na pozivnicu</Link>
+      <Link to="/">Maja & Uros </Link>
+      <Haert>&#10084;</Haert>
+      <Link to="/"> nazad na pozivnicu</Link>
     </Content>
   </Wrapper>
 );

@@ -94,7 +94,7 @@ const Intro = () => (
         <h4>Potvrdite prisustvo</h4>
         <Divider />
         <ConfirmText>
-          Molimo da Vaše prisustvo potvrdite do 19.09.2099.
+          Molimo da Vaše prisustvo potvrdite do 15.11.2019.
         </ConfirmText>
         <Form />
       </Box>

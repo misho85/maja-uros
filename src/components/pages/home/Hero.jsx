@@ -102,6 +102,10 @@ const Text = styled.p`
   margin-bottom: 1em;
 `;
 
+const Molba = styled.p`
+  margin: 1em 0;
+`;
+
 const Respect = styled.p`
   margin: 3em 0;
 `;
@@ -120,20 +124,25 @@ const Hero = () => (
           cannot live without.“
         </Citat>
         <Invitation>
-          Pozivamo Vas da uveličate ceremoniju našeg venčanja 19. oktobra 2019.
+          Pozivamo Vas da uveličate ceremoniju našeg venčanja 30. novembra 2019.
           godine.
         </Invitation>
-        <Title>Maja Mihajlov i Uros Plecić</Title>
+        <Title>Maja Mihajlov i Uroš Plecić</Title>
         <Text>
-          Proslava i građansko venčanje će se održati u restoranu “Akacia Open
-          Concept”
+          Venčanje će se održati u restoranu “Amfora” kod hotela Jugoslavija.
           <br />
-          Okupljanje gostiju od 14h na adresi Kragujevački put 82a
-          <br />
-          Građansko venčanje u 15h
+          Građansko venčanje je zakazano u 16:30 časova, dok je skup svatova u
+          restoranu u 15 časova.
         </Text>
+        <Molba>
+          Molim vas da svoj dolazak potvrdite najkasnije do 15. novembra.
+        </Molba>
         <MapLink to="/mapa">pogledaj mapu</MapLink>
-        <Respect>S poštovanjem, porodice Albunović i Perčić</Respect>
+        <Respect>
+          S poštovanjem,
+          <br />
+          porodice Mihajlov i Plećić
+        </Respect>
         <Confirm to="/contact">potvrdte prisustvo</Confirm>
       </Details>
     </Container>
