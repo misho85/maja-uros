@@ -120,6 +120,10 @@ const Respect = styled.p`
 const MapLink = styled(Link)`
   text-decoration: underline;
   font-size: 20px;
+  transition: all 0.2s ease;
+  &:hover {
+    color: rgba(85, 187, 192, 1);
+  }
 `;
 
 const Hero = () => (
@@ -134,17 +138,17 @@ const Hero = () => (
           Pozivamo Vas da uveličate ceremoniju našeg venčanja 30. novembra 2019.
           godine.
         </Invitation>
-        <Title>Maja Mihajlov i Uroš Plecić</Title>
+        <Title>Maja i Uroš</Title>
         <Text>
-          Venčanje će se održati u restoranu “Amfora” kod hotela Jugoslavija.
+          Venčanje će se održati u restoranu “Amfora” kod hotela Jugoslavija.{' '}
+          <MapLink to="/mapa">pogledaj mapu</MapLink>
           <br />
-          Građansko venčanje je zakazano u 16:30 časova, dok je skup svatova u
-          restoranu u 15 časova.
+          Skup svatova u restoranu u 15 časova, dok je građansko venčanje je
+          zakazano u 16:30 časova.
         </Text>
         <Molba>
           Molim vas da svoj dolazak potvrdite najkasnije do 15. novembra.
         </Molba>
-        <MapLink to="/mapa">pogledaj mapu</MapLink>
         <Respect>
           S poštovanjem,
           <br />

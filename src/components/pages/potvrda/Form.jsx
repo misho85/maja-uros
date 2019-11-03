@@ -25,7 +25,7 @@ const FormFields = styled.ul`
       color: rgba(102, 102, 102, 1);
       font-size: 14px;
     }
-    input {
+    input, select {
       outline: none;
       /* font-family: ${p => p.theme.font.header}; */
       background: rgba(255, 255, 255, 1);
@@ -238,7 +238,7 @@ const Form = () => {
     firstName: '',
     lastName: '',
     email: '',
-    number: 0,
+    number: '',
     message: '',
   };
 
@@ -263,14 +263,9 @@ const Form = () => {
       .catch(error => alert(error));
   };
 
-  const { firstName, lastName, email, number, message } = state;
+  const { firstName, lastName, number } = state;
 
-  const formVerified =
-    firstName === '' ||
-    lastName === '' ||
-    email === '' ||
-    number === null ||
-    message === '';
+  const formVerified = firstName === '' || lastName === '' || number === '';
 
   return (
     <FormContainer
@@ -321,7 +316,6 @@ const Form = () => {
             Email
           </label>
           <input
-            required
             name="email"
             id="email"
             type="email"
@@ -333,17 +327,22 @@ const Form = () => {
           <label hidden htmlFor="number">
             Broj gostiju
           </label>
-          <input
+          <select
             required
             name="number"
             id="number"
-            type="number"
-            value={state.number}
-            min="0"
-            max="10"
+            value={state.value}
             placeholder="Broj gostiju"
             onChange={handleChange}
-          />
+          >
+            <option value="false">Broj gostiju</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </li>
       </FormFields>
       <MessageField>
@@ -352,7 +351,6 @@ const Form = () => {
             Dodatna poruka
           </label>
           <textarea
-            required
             name="message"
             id="message"
             placeholder="Dodatna poruka"
