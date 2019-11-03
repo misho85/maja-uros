@@ -259,7 +259,7 @@ const Form = () => {
         ...state,
       }),
     })
-      .then(() => alert(`Your message has been sent and we'll reply shortly`))
+      .then(() => alert(`Poruka poslata. Vidimo se uskoro 😉 `))
       .catch(error => alert(error));
   };
 
