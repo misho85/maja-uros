@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import back from '~src/assets/images/back.jpg';
+import back2 from '~src/assets/images/back2.jpg';
 
 const Wrapper = styled.section`
   background: linear-gradient(
@@ -9,7 +10,7 @@ const Wrapper = styled.section`
       rgba(245, 246, 252, 0.52),
       rgba(112, 101, 112, 0.73)
     ),
-    url(${back}) no-repeat center;
+    url(${back2}) no-repeat center;
   /* background: linear-gradient(
       to top right,
       rgba(245, 246, 252, 0.52),
@@ -29,6 +30,12 @@ const Wrapper = styled.section`
   height: 100vh;
   padding: 0 5%;
   ${p => p.theme.maxWidth.tablet`
+    background: linear-gradient(
+      to top right,
+      rgba(245, 246, 252, 0.52),
+      rgba(112, 101, 112, 0.73)
+    ),
+    url(${back}) no-repeat center;
     background-size: cover;
     font-size: 90%;
     height: fit-content;
