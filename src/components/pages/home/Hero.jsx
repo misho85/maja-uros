@@ -141,15 +141,15 @@ const Hero = () => (
           Građansko venčanje je zakazano u 16:30 časova, dok je skup svatova u
           restoranu u 15 časova.
         </Text>
+        <Molba>
+          Molim vas da svoj dolazak potvrdite najkasnije do 15. novembra.
+        </Molba>
         <MapLink to="/mapa">pogledaj mapu</MapLink>
         <Respect>
           S poštovanjem,
           <br />
           porodice Mihajlov i Plećić
         </Respect>
-        <Molba>
-          Molim vas da svoj dolazak potvrdite najkasnije do 15. novembra.
-        </Molba>
         <Confirm to="/potvrda">potvrdte prisustvo</Confirm>
       </Details>
     </Container>
