@@ -29,10 +29,6 @@ const Content = styled.div`
   ${p => p.theme.maxWidth.tablet`
     padding: 0 5%;
   `}
-  ${p => p.theme.maxWidth.phone`
-    // padding-top: 90px;
-    // padding-bottom: 80px;
-  `}
 `;
 
 const Haert = styled.small`
