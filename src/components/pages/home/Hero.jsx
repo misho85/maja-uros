@@ -5,18 +5,18 @@ import back from '~src/assets/images/back.jpg';
 import back2 from '~src/assets/images/back2.jpg';
 
 const Wrapper = styled.section`
-  background: linear-gradient(
+  /* background: linear-gradient(
       to top right,
       rgba(245, 246, 252, 0.52),
       rgba(112, 101, 112, 0.73)
     ),
-    url(${back2}) no-repeat center;
-  /* background: linear-gradient(
+    url(${back2}) no-repeat center; */
+  background: linear-gradient(
       to top right,
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.73)
     ),
-    url(${back}) no-repeat center; */
+    url(${back}) no-repeat center;
   /* background: linear-gradient(
       to top right,
       rgba(245, 246, 252, 0.52),
