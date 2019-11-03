@@ -148,7 +148,7 @@ const Hero = () => (
           zakazano u 16:30 časova.
         </Text>
         <Molba>
-          Molim vas da svoj dolazak potvrdite najkasnije do 15. novembra.
+          Molim Vas da svoj dolazak potvrdite najkasnije do 15. novembra.
         </Molba>
         <Respect>
           S poštovanjem,
