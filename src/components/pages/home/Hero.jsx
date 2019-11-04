@@ -144,7 +144,7 @@ const Hero = () => (
           Venčanje će se održati u restoranu “Amfora” kod hotela Jugoslavija.{' '}
           <MapLink to="/mapa">pogledaj mapu</MapLink>
           <br />
-          Skup svatova u restoranu u 15 časova, dok je građansko venčanje je
+          Skup svatova je u restoranu u 15 časova, dok je građansko venčanje
           zakazano u 16:30 časova.
         </Text>
         <Molba>
