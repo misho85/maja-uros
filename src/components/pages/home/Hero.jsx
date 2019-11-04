@@ -141,21 +141,22 @@ const Hero = () => (
         </Invitation>
         <Title>Maja i Uroš</Title>
         <Text>
-          Venčanje će se održati u restoranu “Amfora” kod hotela Jugoslavija.{' '}
+          Venčanje će se održati u restoranu “Amfora” kod hotela Jugoslavija.
+          <br />
           <MapLink to="/mapa">pogledaj mapu</MapLink>
           <br />
           Skup svatova je u restoranu u 15 časova, dok je građansko venčanje
           zakazano u 16:30 časova.
         </Text>
         <Molba>
-          Molim Vas da svoj dolazak potvrdite najkasnije do 15. novembra.
+          Molimo Vas da svoj dolazak potvrdite najkasnije do 15. novembra.
         </Molba>
         <Respect>
           S poštovanjem,
           <br />
           porodice Mihajlov i Plećić
         </Respect>
-        <Confirm to="/potvrda">potvrdte prisustvo</Confirm>
+        <Confirm to="/potvrda">potvrdite prisustvo</Confirm>
       </Details>
     </Container>
   </Wrapper>
