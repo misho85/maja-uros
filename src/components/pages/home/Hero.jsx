@@ -5,26 +5,13 @@ import back from '~src/assets/images/back.jpg';
 import back2 from '~src/assets/images/back2.jpg';
 
 const Wrapper = styled.section`
-  /* background: linear-gradient(
-      to top right,
-      rgba(245, 246, 252, 0.52),
-      rgba(112, 101, 112, 0.73)
-    ),
-    url(${back2}) no-repeat center; */
   background: linear-gradient(
       to top right,
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.73)
     ),
     url(${back2}) no-repeat center;
-  /* background: linear-gradient(
-      to top right,
-      rgba(245, 246, 252, 0.52),
-      rgba(19, 47, 117, 0.73)
-    ),
-    url(${back}) no-repeat center; */
   background-size: 100% 100%;
-  /* background-size: cover; */
   align-items: center;
   display: flex;
   height: 100vh;
@@ -76,8 +63,7 @@ const Confirm = styled(Link)`
   margin: auto;
   cursor: pointer;
   transition: all 0.3s ease;
-  -webkit-appearance: none;
-  /* border-radius: 0.5em; */
+  appearance: none;
   resize: none;
   border: none;
   &:hover {
@@ -89,6 +75,7 @@ const Confirm = styled(Link)`
       background: rgba(85, 187, 192, 1);
     }
   }
+
   margin-bottom: 50px;
   ${p => p.theme.maxWidth.tablet`
     margin-bottom: 50px;

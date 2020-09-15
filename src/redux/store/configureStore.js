@@ -1,4 +1,4 @@
-import { configureStore, getDefaultMiddleware } from 'redux-starter-kit';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import monitorReducersEnhancer from '../enhancers/monitorReducers';
 import loggerMiddleware from '../middleware/logger';
 import rootReducer from '../reducers';
